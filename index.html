@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <title>Shubham Nagar | BCA Data Science Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta name="description" content="Shubham Nagar - BCA (Data Science) student portfolio showcasing web development, data science, artificial intelligence and creative projects.">
+
+    <meta name="keywords" content="Shubham Nagar, BCA Data Science, Web Development, Data Science, Artificial Intelligence, Portfolio">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
+<button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  ↑ Top
+</button>
 
 <body>
 
     <!-- Navigation -->
     <nav>
-        <h2>My Website</h2>
+        <h2>Shubham Nagar</h2>
 
         <div class="menu">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-        </div>
+
+    </div>
     </nav>
 
 
-    <!-- Hero Section -->
-    <div class="hero">
-
+   <!-- Hero Section -->
+<div class="hero">
     <div class="hero-content">
 
-        <p class="tagline">✨ Welcome to my world</p>
+        <p class="tagline">👋 Hello, I'm Shubham Nagar</p>
 
-        <h1>Build. Create. <span>Inspire.</span></h1>
+        <h1>
+    <span id="typing-text"></span><span class="cursor">|</span>
+</h1>
 
         <p class="hero-text">
-            I am learning web development and creating
-            modern websites with HTML, CSS and JavaScript.
+            I am passionate about Web Development, Data Science
+            and Artificial Intelligence. I love learning new
+            technologies and building creative digital projects.
         </p>
 
-        <button onclick="startWebsite()">Get Started 🚀</button>
+        <button onclick="startWebsite()">Explore My Portfolio 🚀</button>
+
+        <div class="hero-buttons">
+    <button onclick="startWebsite()">Explore My Portfolio 🚀</button>
+    <a href="#projects" class="secondary-btn">View My Projects →</a>
+</div>
 
         <p id="message"></p>
 
     </div>
-
-    </div>
-
+</div>
 
     <!-- About Section -->
     <section id="about">
@@ -54,57 +71,82 @@
         <h2>About Me</h2>
 
         <p>
-            I am learning how to create websites using HTML, CSS and JavaScript.
+            I am Shubham, a BCA (Data Science) student passionate about Web Development,
+Data Science and Artificial Intelligence. I enjoy learning new technologies
+and building creative digital projects.
         </p>
 
     </section>
 
 
     <!-- Services Section -->
-  <section id="services">
+<section id="services">
 
-    <h2>My Services</h2>
+    <h2>My Skills & Services</h2>
 
     <div class="cards">
 
         <div class="service-card">
-            <h3>🌐 Web Design</h3>
-            <p>I can create beautiful and modern website designs.</p>
+            <h3>🌐 Web Development</h3>
+            <p>
+                I create clean, modern and responsive websites
+                using HTML, CSS and JavaScript.
+            </p>
         </div>
 
         <div class="service-card">
-            <h3>💻 Web Development</h3>
-            <p>I am learning to build websites using HTML, CSS and JavaScript.</p>
+            <h3>📊 Data Science</h3>
+            <p>
+                I am learning data analysis, visualization and
+                data-driven problem solving.
+            </p>
         </div>
 
         <div class="service-card">
-            <h3>🚀 Creative Projects</h3>
-            <p>I love creating interesting digital and creative projects.</p>
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>
+                I am exploring AI and modern technologies to
+                build creative and useful digital projects.
+            </p>
         </div>
 
     </div>
 
 </section>
 
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Data Science</div>
+    <div class="skill-card">Artificial Intelligence</div>
+  </div>
+</section>
 
     <!-- Contact Section -->
+    
     <section id="contact">
 
     <h2>Contact Me</h2>
 
-    <form id="contactForm">
+    <form id="contactForm"
+      action="https://formspree.io/f/mgaeglrn"
+      method="POST">
 
-        <input type="text" id="name" placeholder="Your Name" required>
+       <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <input type="email" id="email" placeholder="Your Email" required>
+<input type="email" id="email" name="email" placeholder="Your Email" required>
 
-        <textarea id="userMessage" placeholder="Your Message" rows="5" required></textarea>
+<textarea id="userMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
 
         <button type="submit">Send Message 🚀</button>
 
     </form>
 
-    <p id="formMessage"></p>
 
 </section>
 <footer>
@@ -127,6 +169,76 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
+<!-- Projects Section -->
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="cards">
+
+        <div class="service-card">
+            <h3>🌐 Personal Portfolio</h3>
+            <p>
+                A modern personal portfolio website built using
+                HTML, CSS and JavaScript.
+            </p>
+            <a href="https://github.com/shubhamnagar-source/my-website-" target="_blank" class="project-btn">
+    View Project
+</a>
+        </div>
+
+        <div class="service-card">
+            <h3>📊 Data Science Project</h3>
+            <p>
+                A beginner-friendly project focused on data analysis,
+                visualization and meaningful insights.
+            </p>
+            <p class="coming-soon">🚧 Project Coming Soon</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🤖 AI Creative Project</h3>
+            <p>
+                Exploring Artificial Intelligence and creating
+                innovative AI-powered digital experiences.
+            </p>
+            <p class="coming-soon">🚧 Project Coming Soon</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        Have a question or want to connect? Feel free to reach out!
+    </p>
+
+    <div class="contact-info">
+        <p>📧 Email: your-email@example.com</p>
+        <p>💼 LinkedIn:
+    <a href="https://www.linkedin.com/in/shubham-nagar-813b46428/" target="_blank">
+        Visit My LinkedIn
+    </a>
+</p>
+        <p>🐙 GitHub:
+    <a href="https://github.com/shubhamnagar-source/my-website-" target="_blank">
+        View My GitHub Project
+    </a>
+</p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Shubham. All Rights Reserved.</p>
+    <p>BCA (Data Science) Student | Web Development | AI</p>
+</footer>
 
 </body>
 
